@@ -13,7 +13,7 @@ parser = bibtex.Parser()
 
 bib_data = parser.parse_file(args.path)
 
-fields_to_remove = ['archivePrefix', 'file'] + (args.rm_fields if args.rm_fields else [])
+fields_to_remove = args.rm_fields if args.rm_fields else []
 
 output_fn = args.out + ('' if args.out.endswith('.csv') else '.csv') if args.out else args.path.replace('bib', 'csv')
 
