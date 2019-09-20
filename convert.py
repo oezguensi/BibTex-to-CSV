@@ -15,7 +15,7 @@ bib_data = parser.parse_file(args.path)
 
 fields_to_remove = args.rm_fields if args.rm_fields else []
 
-output_fn = args.out + ('' if args.out.endswith('.csv') else '.csv') if args.out else args.path.replace('bib', 'csv')
+output_fn = args.out + ('' if args.out.endswith('csv') else 'csv') if args.out else args.path.replace('bib', 'csv')
 
 csv_fields = []
 csv_data = []
