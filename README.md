@@ -7,4 +7,4 @@ This project uses `pybtex`.
 To run the file please install it via `conda install -c pybtex` or `pip install pybtex`.
 
 # How to
-`python convert.py <path to bib file> [-dl <CSV delimiter>] [-o <CSV path>] [-rf <field to remove> ...]`
+`python convert.py <path to bib file> [-dl <CSV delimiter>] [-o <CSV path>] [-rf <fields to remove>]`
